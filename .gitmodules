@@ -1,0 +1,36 @@
+[submodule "bundle/csv.vim"]
+	path = bundle/csv.vim
+	url = git@github.com:chrisbra/csv.vim.git
+[submodule "autoload/pathogen.vim"]
+	path = autoload/pathogen.vim
+	url = git@github.com:tpope/vim-pathogen.git
+[submodule "bundle/dash.vim"]
+	path = bundle/dash.vim
+	url = git@github.com:rizzatti/dash.vim.git
+[submodule "bundle/jedi-vim"]
+	path = bundle/jedi-vim
+	url = git@github.com:davidhalter/jedi-vim.git
+[submodule "bundle/promptline.vim"]
+	path = bundle/promptline.vim
+	url = git@github.com:edkolev/promptline.vim.git
+[submodule "bundle/python-syntax"]
+	path = bundle/python-syntax
+	url = git@github.com:hdima/python-syntax.git
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = git@github.com:scrooloose/syntastic.git
+[submodule "bundle/tagbar"]
+	path = bundle/tagbar
+	url = git@github.com:majutsushi/tagbar.git
+[submodule "bundle/vim-airline"]
+	path = bundle/vim-airline
+	url = git@github.com:bling/vim-airline.git
+[submodule "bundle/vim-colors-solarized"]
+	path = bundle/vim-colors-solarized
+	url = git@github.com:altercation/vim-colors-solarized.git
+[submodule "bundle/vim-gitgutter"]
+	path = bundle/vim-gitgutter
+	url = git@github.com:airblade/vim-gitgutter.git
+[submodule "bundle/vim-sensible"]
+	path = bundle/vim-sensible
+	url = git@github.com:tpope/vim-sensible.git
