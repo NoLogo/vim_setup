@@ -88,3 +88,6 @@ nnoremap <A-S-F7> :BetterSearchPromptOn<CR>
 vnoremap <A-S-F7> :BetterSearchVisualSelect<CR>
 nnoremap <A-w>    :BetterSearchSwitchWin<CR>
 nnoremap <A-S-q>  :BetterSearchCloseWin<CR>
+
+" JavaScript
+let g:javascript_enable_domhtmlcss = 1
