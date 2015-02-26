@@ -39,8 +39,8 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-let g:syntastic_aggregate_errors = 1
-let g:syntastic_python_checkers = ['pep8', 'pylint', 'python']
+" let g:syntastic_aggregate_errors = 1
+let g:syntastic_python_checkers = ['flake8']
 
 " PyDoc Settings
 filetype plugin on
