@@ -26,6 +26,8 @@ filetype plugin indent on
 
 " Airline Settings
 let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
 
 " Python Syntax
 let python_highlight_all = 1
@@ -49,6 +51,12 @@ filetype plugin on
 syntax enable
 set background=dark
 colorscheme solarized
+
+" CSS
+let g:cssColorVimDoNotMessMyUpdatetime = 1
+
+" Tagline
+nmap <F8> :TagbarToggle<CR>
 
 " Line Numbers
 set number
@@ -74,7 +82,6 @@ set expandtab
 set guifont=Menlo\ Regular:h14
 
 " CtrlP
-
 let g:ctrlp_map = '<leader>t'
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_extensions = ['tag']
