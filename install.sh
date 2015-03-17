@@ -1,4 +1,5 @@
 #run this from the top directory
+git submodule init
 git submodule update
 
 mkdir ~/.vim ~/.vim/autoload
