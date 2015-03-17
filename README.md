@@ -1,7 +1,1 @@
-# vim_setup
-
-My personal vim setup
-
-*Vim-pathogen is needed*
-
-https://github.com/tpope/vim-pathogen
+#*Run the install.sh & win.*
