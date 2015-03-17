@@ -1,1 +1,1 @@
-#*Run the install.sh & win.*
+#*Run install.sh & win.*
