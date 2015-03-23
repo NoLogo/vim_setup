@@ -59,6 +59,7 @@ let g:cssColorVimDoNotMessMyUpdatetime = 1
 nmap <F8> :TagbarToggle<CR>
 
 " Line Numbers
+set relativenumber
 set number
 
 " Highlighting
