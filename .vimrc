@@ -1,3 +1,10 @@
+" Pathogen Settings
+filetype off
+call pathogen#infect()
+call pathogen#helptags()
+filetype plugin indent on
+syntax on
+
 " Destroy the arrow keys
 nnoremap <up> <nop>
 nnoremap <down> <nop>
@@ -18,11 +25,6 @@ noremap <C-j> <C-w>j
 noremap <C-k> <C-w>k
 noremap <C-l> <C-w>l
 noremap <leader>v <C-w>v
-
-" Pathogen Settings
-execute pathogen#infect()
-syntax on
-filetype plugin indent on
 
 " Airline Settings
 let g:airline_powerline_fonts = 1
