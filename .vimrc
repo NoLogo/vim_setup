@@ -26,13 +26,56 @@ noremap <C-k> <C-w>k
 noremap <C-l> <C-w>l
 noremap <leader>v <C-w>v
 
+" Hide junk
+set wildmenu
+set wildmode=longest,list:longest
+
+set wildignore+=.git,.hg,.svn
+set wildignore+=*.class,*.dll,*.exe,*.manifest,*.o,*.obj
+set wildignore+=*.spl
+set wildignore+=*.DS_Store
+set wildignore+=*.pyc
+set wildignore+=*.egg-info
+set wildignore+=.tox
+set wildignore+=.sass-cache
+
+" Highlighting
+set cursorline
+hi CursorLineNr   term=bold ctermfg=Yellow gui=bold guifg=Yellow
+
+" Line Numbers
+set relativenumber
+set number
+
+" Ruler
+set colorcolumn=79
+
+" Display EOL whitespace
+set list
+set listchars=trail:.
+
+" Tabs & Spacing
+set nowrap
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+set textwidth=0
+
+" Swapfile
+set noswapfile
 " Airline Settings
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
 
-" Python Syntax
-let python_highlight_all = 1
+" Solarized theme
+syntax enable
+set background=dark
+colorscheme solarized
+
+" Font
+set guifont=Menlo\ Regular:h14
 
 " Syntastic Settings
 set statusline+=%#warningmsg#
@@ -43,46 +86,19 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-" let g:syntastic_aggregate_errors = 1
 let g:syntastic_python_checkers = ['flake8']
+
+" Python Syntax
+let python_highlight_all = 1
 
 " PyDoc Settings
 filetype plugin on
-
-" Solarized theme
-syntax enable
-set background=dark
-colorscheme solarized
 
 " CSS
 let g:cssColorVimDoNotMessMyUpdatetime = 1
 
 " Tagline
 nmap <F8> :TagbarToggle<CR>
-
-" Line Numbers
-set relativenumber
-set number
-
-" Highlighting
-set cursorline
-hi CursorLineNr   term=bold ctermfg=Yellow gui=bold guifg=Yellow
-
-" Ruler
-set colorcolumn=79
-
-" Display EOL whitespace
-set list
-set listchars=trail:.
-
-" Tabs
-set smartindent
-set tabstop=4
-set shiftwidth=4
-set expandtab
-
-" Font
-set guifont=Menlo\ Regular:h14
 
 " CtrlP
 let g:ctrlp_map = '<leader>t'
