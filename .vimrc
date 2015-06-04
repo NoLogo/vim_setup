@@ -38,6 +38,7 @@ set wildignore+=*.pyc
 set wildignore+=*.egg-info
 set wildignore+=.tox
 set wildignore+=.sass-cache
+set wildignore+=.coverage.*
 
 " Highlighting
 set cursorline
