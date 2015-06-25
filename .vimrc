@@ -102,19 +102,17 @@ let g:cssColorVimDoNotMessMyUpdatetime = 1
 nmap <F8> :TagbarToggle<CR>
 
 " CtrlP
-let g:ctrlp_map = '<leader>t'
-let g:ctrlp_working_path_mode = 0
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_extensions = ['tag']
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+let g:ctrlp_user_command = 'find %s -type f'
+
 if executable('ag')
     let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
     let g:ctrlp_use_caching = 0
 endif
-
-" Better Search
-nnoremap <A-S-F7> :BetterSearchPromptOn<CR>
-vnoremap <A-S-F7> :BetterSearchVisualSelect<CR>
-nnoremap <A-w>    :BetterSearchSwitchWin<CR>
-nnoremap <A-S-q>  :BetterSearchCloseWin<CR>
 
 " JavaScript
 let g:javascript_enable_domhtmlcss = 1
