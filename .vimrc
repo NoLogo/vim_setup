@@ -26,10 +26,7 @@ noremap <C-k> <C-w>k
 noremap <C-l> <C-w>l
 noremap <leader>v <C-w>v
 
-" Hide junk
-set wildmenu
-set wildmode=longest,list:longest
-
+" Wild Menu
 set wildignore+=.git,.hg,.svn
 set wildignore+=*.class,*.dll,*.exe,*.manifest,*.o,*.obj
 set wildignore+=*.spl
@@ -39,6 +36,9 @@ set wildignore+=*.egg-info
 set wildignore+=.tox
 set wildignore+=.sass-cache
 set wildignore+=.coverage.*
+
+set wildmenu
+set wildmode=longest,list,full
 
 " Highlighting
 set cursorline
@@ -108,11 +108,13 @@ let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_extensions = ['tag']
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 let g:ctrlp_user_command = 'find %s -type f'
-
 if executable('ag')
     let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
     let g:ctrlp_use_caching = 0
 endif
+
+" SuperTab
+let g:SuperTabDefaultCompletionType = "<c-n>"
 
 " JavaScript
 let g:javascript_enable_domhtmlcss = 1
