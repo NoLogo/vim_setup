@@ -89,15 +89,6 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_python_checkers = ['flake8']
 
-" Python Syntax
-let python_highlight_all = 1
-
-" PyDoc Settings
-filetype plugin on
-
-" CSS
-let g:cssColorVimDoNotMessMyUpdatetime = 1
-
 " Tagline
 nmap <F8> :TagbarToggle<CR>
 
