@@ -51,9 +51,23 @@ set number
 " Ruler
 set colorcolumn=79
 
+" Clear highlight
+noremap <leader>/ :nohlsearch<CR>
+
 " Display EOL whitespace
 set list
 set listchars=trail:.
+
+""status
+set statusline=(%n)
+set statusline+=[%t]       "tail of the filename
+set statusline+=[%{strlen(&fenc)?&fenc:'none'}, "file encoding
+set statusline+=%{&ff}] "file format
+set statusline+=%h      "help file flag
+set statusline+=%m      "modified flag
+set statusline+=%r      "read only flag
+set statusline+=%y      "filetype
+set statusline+=%=      "left/right separator
 
 " Tabs & Spacing
 set nowrap
@@ -65,6 +79,7 @@ set textwidth=0
 
 " Swapfile
 set noswapfile
+
 " Airline Settings
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#left_sep = ' '
