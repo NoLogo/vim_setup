@@ -124,3 +124,6 @@ let g:SuperTabDefaultCompletionType = "<c-n>"
 
 " JavaScript
 let g:javascript_enable_domhtmlcss = 1
+
+" CTags
+noremap <leader>gt :!ctags --extra=+f --exclude=.git --exclude=log -R * `rvm gemdir`/gems/*<CR><CR>
