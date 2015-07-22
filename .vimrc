@@ -43,6 +43,7 @@ set wildmode=longest,list,full
 " Highlighting
 set cursorline
 hi CursorLineNr   term=bold ctermfg=Yellow gui=bold guifg=Yellow
+set hlsearch
 
 " Line Numbers
 set relativenumber
@@ -50,9 +51,6 @@ set number
 
 " Ruler
 set colorcolumn=79
-
-" Clear highlight
-noremap <leader>/ :nohlsearch<CR>
 
 " Display EOL whitespace
 set list
