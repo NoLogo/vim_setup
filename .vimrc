@@ -58,7 +58,7 @@ noremap <leader>/ :nohlsearch<CR>
 set list
 set listchars=trail:.
 
-""status
+" Status
 set statusline=(%n)
 set statusline+=[%t]       "tail of the filename
 set statusline+=[%{strlen(&fenc)?&fenc:'none'}, "file encoding
