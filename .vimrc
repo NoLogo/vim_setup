@@ -82,14 +82,15 @@ set noswapfile
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
+set laststatus=2
+
+" Font
+set guifont=Inconsolata-g\ for\ Powerline:h13
 
 " Solarized theme
 syntax enable
 set background=dark
 colorscheme solarized
-
-" Font
-set guifont=Menlo\ Regular:h14
 
 " Syntastic Settings
 set statusline+=%#warningmsg#
