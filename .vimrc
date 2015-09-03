@@ -123,3 +123,6 @@ noremap <leader>gt :!ctags --extra=+f --exclude=.git --exclude=log -R * `rvm gem
 
 " Tagline
 nmap <F8> :TagbarToggle<CR>
+
+" Conque Term
+let g:ConqueTerm_PyVersion = 3
