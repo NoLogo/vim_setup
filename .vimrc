@@ -103,9 +103,6 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_python_checkers = ['flake8']
 
-" Tagline
-nmap <F8> :TagbarToggle<CR>
-
 " CtrlP
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
@@ -121,8 +118,8 @@ endif
 " SuperTab
 let g:SuperTabDefaultCompletionType = "<c-n>"
 
-" JavaScript
-let g:javascript_enable_domhtmlcss = 1
-
 " CTags
 noremap <leader>gt :!ctags --extra=+f --exclude=.git --exclude=log -R * `rvm gemdir`/gems/*<CR><CR>
+
+" Tagline
+nmap <F8> :TagbarToggle<CR>
