@@ -58,6 +58,3 @@
 [submodule "bundle/vim-tags"]
 	path = bundle/vim-tags
 	url = https://github.com/szw/vim-tags.git
-[submodule "bundle/Conque-Shell"]
-	path = bundle/Conque-Shell
-	url = git@github.com:vim-scripts/Conque-Shell.git
