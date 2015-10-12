@@ -121,4 +121,5 @@ noremap <leader>gt :!ctags --extra=+f --exclude=.git --exclude=log -R * `rvm gem
 nmap <F8> :TagbarToggle<CR>
 
 " BetterWhitespace
+set nolist
 let g:better_whitespace_verbosity=1
