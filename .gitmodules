@@ -58,3 +58,6 @@
 [submodule "bundle/vim-tags"]
 	path = bundle/vim-tags
 	url = https://github.com/szw/vim-tags.git
+[submodule "bundle/vim-better-whitespace"]
+	path = bundle/vim-better-whitespace
+	url = git@github.com:ntpeters/vim-better-whitespace.git

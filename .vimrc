@@ -52,10 +52,6 @@ set number
 " Ruler
 set colorcolumn=79
 
-" Display EOL whitespace
-set list
-set listchars=trail:.
-
 " Status
 set statusline=(%n)
 set statusline+=[%t]       "tail of the filename
@@ -123,3 +119,6 @@ noremap <leader>gt :!ctags --extra=+f --exclude=.git --exclude=log -R * `rvm gem
 
 " Tagline
 nmap <F8> :TagbarToggle<CR>
+
+" BetterWhitespace
+let g:better_whitespace_verbosity=1
