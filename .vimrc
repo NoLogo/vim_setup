@@ -27,7 +27,7 @@ noremap <C-l> <C-w>l
 noremap <leader>v <C-w>v
 
 " Wild Menu
-set wildignore+=.git,.hg,.svn
+set wildignore+=.git,.git/,.hg,.svn
 set wildignore+=*.class,*.dll,*.exe,*.manifest,*.o,*.obj
 set wildignore+=*.spl
 set wildignore+=*.DS_Store
