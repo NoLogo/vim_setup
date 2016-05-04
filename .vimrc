@@ -81,7 +81,7 @@ let g:airline#extensions#tabline#left_alt_sep = '|'
 set laststatus=2
 
 " Font
-set guifont=Inconsolata-g\ for\ Powerline:h13
+set guifont=Sauce\ Code\ Powerline\ Light:h16
 
 " Solarized theme
 syntax enable
