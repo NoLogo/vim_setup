@@ -26,6 +26,9 @@ noremap <C-k> <C-w>k
 noremap <C-l> <C-w>l
 noremap <leader>v <C-w>v
 
+" Hide *.pyc files
+let g:netrw_list_hide= '.*\.pyc$'
+
 " Wild Menu
 set wildignore+=.git,.git/,.hg,.svn
 set wildignore+=*.class,*.dll,*.exe,*.manifest,*.o,*.obj
