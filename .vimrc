@@ -1,9 +1,42 @@
-" Pathogen Settings
-filetype off
-call pathogen#infect()
-call pathogen#helptags()
-filetype plugin indent on
-syntax on
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+" Keep Plugin commands between vundle#begin/end.
+" plugin on GitHub repo
+Plugin 'airblade/vim-gitgutter'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'chr4/nginx.vim'
+Plugin 'kien/ctrlp.vim'
+Plugin 'ntpeters/vim-better-whitespace'
+Plugin 'rking/ag.vim'
+Plugin 'tpope/vim-sensible'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-syntastic/syntastic'
+
+"supertab tagbar vim-tags
+
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
 
 " Set file format to unix style
 :set fileformat=unix
@@ -60,14 +93,14 @@ set colorcolumn=79
 
 " Status
 set statusline=(%n)
-set statusline+=[%t]       "tail of the filename
-set statusline+=[%{strlen(&fenc)?&fenc:'none'}, "file encoding
-set statusline+=%{&ff}] "file format
-set statusline+=%h      "help file flag
-set statusline+=%m      "modified flag
-set statusline+=%r      "read only flag
-set statusline+=%y      "filetype
-set statusline+=%=      "left/right separator
+set statusline+=[%t]                                    "tail of the filename
+set statusline+=[%{strlen(&fenc)?&fenc:'none'},         "file encoding
+set statusline+=%{&ff}]                                 "file format
+set statusline+=%h                                      "help file flag
+set statusline+=%m                                      "modified flag
+set statusline+=%r                                      "read only flag
+set statusline+=%y                                      "filetype
+set statusline+=%=                                      "left/right separator
 
 " Tabs & Spacing
 set nowrap
@@ -116,13 +149,6 @@ if executable('ag')
     let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
     let g:ctrlp_use_caching = 0
 endif
-
-" SuperTab
-let g:SuperTabDefaultCompletionType = "<c-n>"
-
-" CTags
-let g:vim_tags_auto_generate = 1
-noremap <leader>gt :!ctags --extra=+f --exclude=.git --exclude=log -R * `rvm gemdir`/gems/*<CR><CR>
 
 " Tagline
 nmap <F8> :TagbarToggle<CR>
