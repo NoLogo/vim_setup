@@ -17,6 +17,7 @@ Plugin 'ervandew/supertab'
 Plugin 'kien/ctrlp.vim'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'rking/ag.vim'
+Plugin 'szw/vim-tags'
 Plugin 'tpope/vim-sensible'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-airline/vim-airline'
@@ -156,6 +157,10 @@ nmap <F8> :TagbarToggle<CR>
 
 " SuperTab
 let g:SuperTabDefaultCompletionType = "<c-n>"
+
+" CTags
+let g:vim_tags_auto_generate = 1
+noremap <leader>gt :!ctags --extra=+f --exclude=.git --exclude=log -R * `rvm gemdir`/gems/*<CR><CR>
 
 " BetterWhitespace
 set nolist
