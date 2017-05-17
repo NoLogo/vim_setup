@@ -5,6 +5,9 @@ call pathogen#helptags()
 filetype plugin indent on
 syntax on
 
+" Set file format to unix style
+:set fileformat=unix
+
 " Destroy the arrow keys
 nnoremap <up> <nop>
 nnoremap <down> <nop>
@@ -118,6 +121,7 @@ endif
 let g:SuperTabDefaultCompletionType = "<c-n>"
 
 " CTags
+let g:vim_tags_auto_generate = 1
 noremap <leader>gt :!ctags --extra=+f --exclude=.git --exclude=log -R * `rvm gemdir`/gems/*<CR><CR>
 
 " Tagline

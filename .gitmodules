@@ -64,3 +64,6 @@
 [submodule "bundle/vim-nginx"]
 	path = bundle/vim-nginx
 	url = git@github.com:fatih/vim-nginx.git
+[submodule "bundle/YouCompleteMe"]
+	path = bundle/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe.git
