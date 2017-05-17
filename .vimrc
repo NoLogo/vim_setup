@@ -13,6 +13,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'chr4/nginx.vim'
+Plugin 'ervandew/supertab'
 Plugin 'kien/ctrlp.vim'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'rking/ag.vim'
@@ -152,6 +153,9 @@ endif
 
 " Tagline
 nmap <F8> :TagbarToggle<CR>
+
+" SuperTab
+let g:SuperTabDefaultCompletionType = "<c-n>"
 
 " BetterWhitespace
 set nolist
