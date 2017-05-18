@@ -14,14 +14,18 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'chr4/nginx.vim'
 Plugin 'ervandew/supertab'
+Plugin 'jmcantrell/vim-virtualenv'
 Plugin 'kien/ctrlp.vim'
+Plugin 'majutsushi/tagbar'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'rking/ag.vim'
 Plugin 'szw/vim-tags'
+Plugin 'Shougo/deoplete.nvim'
+" Plugin 'Shougo/neocomplete.vim'
 Plugin 'tpope/vim-sensible'
-Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-syntastic/syntastic'
+Plugin 'zchee/deoplete-jedi'
 
 "supertab tagbar vim-tags
 
@@ -152,6 +156,14 @@ if executable('ag')
     let g:ctrlp_use_caching = 0
 endif
 
+" deoplete-jedi
+let g:python_host_prog = '/Users/philip/venvs/py2/bin/python'
+let g:python3_host_prog = '/Users/philip/venvs/py3/bin/python'
+
+" Deoplete.
+let g:deoplete#enable_at_startup = 1
+let g:deoplete#complete_method = 'omnifunc'
+
 " Tagline
 nmap <F8> :TagbarToggle<CR>
 
@@ -161,6 +173,9 @@ let g:SuperTabDefaultCompletionType = "<c-n>"
 " CTags
 let g:vim_tags_auto_generate = 1
 noremap <leader>gt :!ctags --extra=+f --exclude=.git --exclude=log -R * `rvm gemdir`/gems/*<CR><CR>
+
+" Tagbar
+nmap <F8> :TagbarToggle<CR>
 
 " BetterWhitespace
 set nolist
