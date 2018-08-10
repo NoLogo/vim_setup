@@ -1,33 +1,48 @@
-[submodule "autoload/pathogen.vim"]
-	path = autoload/pathogen.vim
-	url = git@github.com:tpope/vim-pathogen.git
-[submodule "bundle/promptline.vim"]
-	path = bundle/promptline.vim
-	url = git@github.com:edkolev/promptline.vim.git
-[submodule "bundle/python-syntax"]
-	path = bundle/python-syntax
-	url = git@github.com:hdima/python-syntax.git
-[submodule "bundle/vim-javascript"]
-	path = bundle/vim-javascript
-	url = https://github.com/pangloss/vim-javascript.git
-[submodule "bundle/vim-angular"]
-	path = bundle/vim-angular
-	url = https://github.com/burnettk/vim-angular.git
-[submodule "bundle/vim-css-color"]
-	path = bundle/vim-css-color
-	url = https://github.com/skammer/vim-css-color.git
-[submodule "bundle/vim-css3-syntax"]
-	path = bundle/vim-css3-syntax
-	url = https://github.com/hail2u/vim-css3-syntax.git
-[submodule "bundle/ember.vim"]
-	path = bundle/ember.vim
-	url = https://github.com/dsawardekar/ember.vim.git
-[submodule "pathogen"]
-	path = pathogen
-	url = git@github.com:tpope/vim-pathogen.git
-[submodule "bundle/YouCompleteMe"]
-	path = bundle/YouCompleteMe
-	url = https://github.com/Valloric/YouCompleteMe.git
 [submodule "bundle/Vundle.vim"]
 	path = bundle/Vundle.vim
 	url = https://github.com/VundleVim/Vundle.vim.git
+[submodule "bundle/ag.vim"]
+	path = bundle/ag.vim
+	url = https://github.com/rking/ag.vim.git
+[submodule "bundle/ctrlp.vim"]
+	path = bundle/ctrlp.vim
+	url = https://github.com/kien/ctrlp.vim.git
+[submodule "bundle/deoplete-jedi"]
+	path = bundle/deoplete-jedi
+	url = https://github.com/zchee/deoplete-jedi.git
+[submodule "bundle/deoplete.vim"]
+	path = bundle/deoplete.vim
+	url = https://github.com/Shougo/deoplete.nvim.git
+[submodule "bundle/nginx.vim"]
+	path = bundle/nginx.vim
+	url = https://github.com/VundleVim/Vundle.vim.git
+[submodule "bundle/supertab"]
+	path = bundle/supertab
+	url = https://github.com/ervandew/supertab.git
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = https://github.com/vim-syntastic/syntastic.git
+[submodule "bundle/tagbar"]
+	path = bundle/tagbar
+	url = https://github.com/majutsushi/tagbar.git
+[submodule "bundle/vim-airline"]
+	path = bundle/vim-airline
+	url = https://github.com/vim-airline/vim-airline.git
+[submodule "bundle/vim-better-whitespace"]
+	path = bundle/vim-better-whitespace
+	url = https://github.com/ntpeters/vim-better-whitespace.git
+[submodule "bundle/vim-colors-solarized"]
+	path = bundle/vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized.git
+[submodule "bundle/vim-gitgutter"]
+	path = bundle/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git
+[submodule "bundle/vim-sensible"]
+	path = bundle/vim-sensible
+	url = https://github.com/tpope/vim-sensible.git
+[submodule "bundle/vim-tags"]
+	path = bundle/vim-tags
+	url = https://github.com/szw/vim-tags.git
+[submodule "bundle/vim-virtualenv"]
+	path = bundle/vim-virtualenv
+	url = https://github.com/plytophogy/vim-virtualenv.git
