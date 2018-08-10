@@ -10,8 +10,8 @@
 [submodule "bundle/deoplete-jedi"]
 	path = bundle/deoplete-jedi
 	url = https://github.com/zchee/deoplete-jedi.git
-[submodule "bundle/deoplete.vim"]
-	path = bundle/deoplete.vim
+[submodule "bundle/deoplete.nvim"]
+	path = bundle/deoplete.nvim
 	url = https://github.com/Shougo/deoplete.nvim.git
 [submodule "bundle/nginx.vim"]
 	path = bundle/nginx.vim
