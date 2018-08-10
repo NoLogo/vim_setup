@@ -162,8 +162,8 @@ if executable('ag')
 endif
 
 " deoplete-jedi
-let g:python_host_prog = '/Home/philip/venvs/py2/bin/python'
-let g:python3_host_prog = '/Home/philip/venvs/py3/bin/python'
+let g:python_host_prog = '/home/philip/venvs/py2/bin/python'
+let g:python3_host_prog = '/home/philip/venvs/py3/bin/python'
 
 " Deoplete.
 let g:deoplete#enable_at_startup = 1
