@@ -21,7 +21,6 @@ Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'rking/ag.vim'
 Plugin 'szw/vim-tags'
 Plugin 'Shougo/deoplete.nvim'
-" Plugin 'Shougo/neocomplete.vim'
 Plugin 'tpope/vim-sensible'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-syntastic/syntastic'
@@ -163,8 +162,8 @@ if executable('ag')
 endif
 
 " deoplete-jedi
-let g:python_host_prog = '/Users/philip/venvs/py2/bin/python'
-let g:python3_host_prog = '/Users/philip/venvs/py3/bin/python'
+let g:python_host_prog = '/Home/philip/venvs/py2/bin/python'
+let g:python3_host_prog = '/Home/philip/venvs/py3/bin/python'
 
 " Deoplete.
 let g:deoplete#enable_at_startup = 1
