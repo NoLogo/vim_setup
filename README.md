@@ -1,6 +1,6 @@
-#*Run install.sh & win.*
+# *Run install.sh & win.*
 
-##To update all submodules:
+## Update all submodules:
 ```bash
 git submodule foreach git pull origin master
 ```
@@ -9,4 +9,4 @@ git submodule foreach git pull origin master
 :UpdateRemotePlugins
 ```
 
-__ Create python2 & python3 virtualenvs for deoplete __
+*Create python2 & python3 virtualenvs for deoplete*
